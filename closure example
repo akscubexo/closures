@@ -1,0 +1,29 @@
+// v basic example
+
+function human(){                            //outer f
+    const name= 'Akshara'                    //var def
+    function sayHi(){                        //inner f
+        console.log(`hi i am ${name}`)       //o/p using outer function var
+    }
+    sayHi();                                 //calling inner 
+}
+
+human();                                     //calling inner
+
+
+//2nd example
+
+function human(n){
+    function sayHi(){
+        console.log(`hi i am ${n}`)
+    }
+    function sayHowYouFeel(){
+        console.log(`${n} is feeling good`)
+    }
+    sayHi();
+    sayHowYouFeel();
+}
+
+human('Akshara');
+const Akshara = human('Akshara');
+const aditi = human('aditi');
